@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Contact Information" section_id="dd6a860247faf5505d6c8fd4f16d4345" sys_domain="global" table="x_snc_award_mgmt_nsf_contact" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email_address</element>
+            <position>0</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:43</sys_created_on>
+            <sys_id>9d6a860247faf5505d6c8fd4f16d4346</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information" display_value="Contact Information" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">dd6a860247faf5505d6c8fd4f16d4345</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Contact Information</caption>
+            <header>false</header>
+            <name>x_snc_award_mgmt_nsf_contact</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd6a860247faf5505d6c8fd4f16d4345</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_award_mgmt_nsf_contact</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+            <sys_update_name>sys_ui_section_dd6a860247faf5505d6c8fd4f16d4345</sys_update_name>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:43</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

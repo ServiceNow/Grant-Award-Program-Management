@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition display_value="Reject">5dee920af07ef550c54bb9f8946e85f5</action_payload_definition>
+        <label>Reject Evam</label>
+        <model display_value="Evam">035d270073151010c342d5fdbdf6a715</model>
+        <payload_map>table={{table}}^sysId={{sys_id}}^EQ</payload_map>
+        <required_translations/>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-11-30 17:51:18</sys_created_on>
+        <sys_id>91ee920a567ef550282ae489ee206df4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reject Evam</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_91ee920a567ef550282ae489ee206df4</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:51:18</sys_updated_on>
+    </sys_declarative_action_payload_mapping>
+</record_update>

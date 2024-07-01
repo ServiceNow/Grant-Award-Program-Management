@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="856a460247faf5505d6c8fd4f16d439b" extends="sn_niem_contact" label="NSF Contact" max_length="40" name="x_snc_award_mgmt_nsf_contact" type="collection"/>
+</database>

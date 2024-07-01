@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <search_context_config display_value="Award Program Management - Workspace Search">32fe69bd4e3a7550f3e653e2b4a4862d</search_context_config>
+        <source display_value="Award Program Management - x_snc_award_mgmt_delive">bbfee9bd473a75505d6c8fd4f16d4332</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-29 19:43:31</sys_created_on>
+        <sys_id>fffee9bd473a75505d6c8fd4f16d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_fffee9bd473a75505d6c8fd4f16d4341</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-29 19:43:31</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

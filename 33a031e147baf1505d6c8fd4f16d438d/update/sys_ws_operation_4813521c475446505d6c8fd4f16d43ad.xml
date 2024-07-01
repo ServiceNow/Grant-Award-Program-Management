@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Create Programmatic Activity OLD</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // Get input parameters from the request payload
+    var requestBody = request.body;
+    var requestData = requestBody.data;
+
+    gs.info("NSF: programmatic_activity called with " + JSON.stringify(requestData, null, 4));
+
+    var award = requestData.award;
+    var activityLead = requestData.activity_lead;
+    var activityLeadEmail = requestData.activity_lead_email;
+    var category = requestData.category;
+    var title = requestData.title;
+    var description = requestData.description;
+
+    var record = new GlideRecord('x_snc_award_mgmt_programmatic_activity');
+
+    // Set field values on the record
+    record.setValue('award', award);
+    record.setValue('activity_lead', activityLead);
+    record.setValue('activity_lead_email', activityLeadEmail);
+    record.setValue('category', category);
+    record.setValue('title', title);
+    record.setValue('description', description);
+
+    // Return a success response with the inserted record's sys_id
+    // Define a response object with status and data
+    var responseObj = {
+        status: "success",
+        data: {}
+    };
+
+    // Insert the record and handle success/error
+    try {
+        var sysId = record.insert();
+        if (sysId) {
+            responseObj.data.sys_id = sysId; // Ensure this is the actual sys_id string
+            response.setStatus(201); // Success
+        } else {
+            throw new Error("Record insertion failed.");
+        }
+    } catch (error) {
+        responseObj.status = "error";
+        responseObj.data.message = error.message;
+        response.setStatus(500); // Internal Server Error
+    }
+
+    response.setContentType('application/json');
+    response.setBody(responseObj);
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_award_mgmt/programmatic_activity</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2024-02-07 20:09:15</sys_created_on>
+        <sys_id>4813521c475446505d6c8fd4f16d43ad</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Create Programmatic Activity OLD</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ws_operation_4813521c475446505d6c8fd4f16d43ad</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-02-07 20:58:24</sys_updated_on>
+        <web_service_definition display_value="programmatic_activity">a1b2d2d8475446505d6c8fd4f16d4380</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

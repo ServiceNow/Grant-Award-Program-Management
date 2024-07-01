@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_style_asset">
+    <m2m_style_asset action="INSERT_OR_UPDATE">
+        <asset display_value="NSF_Official_Logo_2_173x50">b8a2eedb477671905d6c8fd4f16d43f8</asset>
+        <properties>{
+  "position": "header_logo"
+}</properties>
+        <style display_value="Imagery">4051eedb477671905d6c8fd4f16d439c</style>
+        <sys_class_name>m2m_style_asset</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-04 15:20:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bca2e69f477671905d6c8fd4f16d43b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>m2m_style_asset_bca2e69f477671905d6c8fd4f16d43b5</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-04 15:20:01</sys_updated_on>
+    </m2m_style_asset>
+</record_update>

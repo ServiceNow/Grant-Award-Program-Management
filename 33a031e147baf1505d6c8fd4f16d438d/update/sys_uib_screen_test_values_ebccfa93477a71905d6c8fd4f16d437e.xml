@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+    "sysId": "178bc6b987b3b19031a07558dabb3530",
+    "029f04e053610110ac9bddeeff7b1294": {
+        "view": "workspace-lessons-learned-workspace-0",
+        "detailsContext": null,
+        "activityLogs": null,
+        "screen": null,
+        "fields": null,
+        "userPrefs": null
+    },
+    "table": "x_snc_award_mgmt_deliverable"
+}</macroponent_config>
+        <screen display_value="Default">a3ccfa93477a71905d6c8fd4f16d437b</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-04 17:14:21</sys_created_on>
+        <sys_id>ebccfa93477a71905d6c8fd4f16d437e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_ebccfa93477a71905d6c8fd4f16d437e</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-06-17 15:22:09</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

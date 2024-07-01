@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - Popular Articles">9dee920ac77ef5504988526e614703ca</dataset>
+        <datasource display_value="Custom Portal Landing - Popular articles Datasource">91ee920abe7ef550d4f11e90c0004aca</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-11-30 17:51:19</sys_created_on>
+        <sys_id>d5ee920a1c7ef55022eb6b8d73f476c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_d5ee920a1c7ef55022eb6b8d73f476c8</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-11-30 17:51:19</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

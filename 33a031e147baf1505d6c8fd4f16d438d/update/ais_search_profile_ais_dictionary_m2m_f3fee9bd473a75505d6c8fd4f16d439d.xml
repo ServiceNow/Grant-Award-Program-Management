@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_snc_award_mgmt_award_program_management_search_profile_default_spell_check_dictionary">3ffee9bd473a75505d6c8fd4f16d439a</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="award-program-management Search Profile">7afe69bd353a755069d600e91a994b36</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-29 19:43:31</sys_created_on>
+        <sys_id>f3fee9bd473a75505d6c8fd4f16d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_award_mgmt_award_program_management_search_profile_default_spell_check_dictionary.award-program-management Search Profile</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_f3fee9bd473a75505d6c8fd4f16d439d</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-29 19:43:31</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

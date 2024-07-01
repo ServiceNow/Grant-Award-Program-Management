@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_award_mgmt.Lookup Rubric Questions</api_name>
+        <description>Lookup  Rubric Questions for the deliverable</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Lookup Rubric Questions</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+   "name": "deliverableSysId",&#13;
+  "label": "Deliverable Sys ID",&#13;
+    "fieldType": "string",&#13;
+    "valueType": "string",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "description": "sys id of the deliverable"&#13;
+  }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Deliverable Sys ID",
+  "comment" : ""
+}, {
+  "message" : "sys id of the deliverable",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var caseSysId = input.deliverableSysId;
+    var helper = new sn_niem.AssessmentHelper();
+    var result = helper.getAssessmentQuestionResponsesForCase(caseSysId);
+    return result;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>kate.flood</sys_created_by>
+        <sys_created_on>2023-11-30 17:37:54</sys_created_on>
+        <sys_id>dc69560e473ef5505d6c8fd4f16d43f0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Lookup Rubric Questions</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_dc69560e473ef5505d6c8fd4f16d43f0</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-02-16 19:18:09</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc69560e473ef5505d6c8fd4f16d43f0"/>
+</record_update>

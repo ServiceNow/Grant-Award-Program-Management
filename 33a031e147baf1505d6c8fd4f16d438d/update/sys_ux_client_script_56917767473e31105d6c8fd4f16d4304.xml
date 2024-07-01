@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Deliverable Record Page">d80f6dbd473a75505d6c8fd4f16d437d</macroponent>
+        <name>Handle Question Answered</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    const questionType = event.context.item.value.type;
+    
+    var local_ans = api.state.assmtQuestionList;
+    var ans_value;
+    var ans_resp;
+    var sys_id = event.context.item.value.sys_id;
+
+    //find answer in JSON and update
+    var indexItemClicked = event.context.item.index;
+    var qtn_selected = local_ans[0].questionList[indexItemClicked];
+
+    switch(questionType){
+        case "choice":
+        ans_value = event.payload.item.value;
+        ans_resp = event.payload.item.id;
+        break;
+
+        case "yes_no":
+        ans_resp = event.payload.value;
+        if (ans_resp == "yes"){
+            ans_value = qtn_selected.points;
+        } else {
+            ans_value = 0;
+        }
+        break;
+
+        default:
+    }
+
+qtn_selected.response = ans_resp;
+qtn_selected.value = ans_value;
+
+api.setState("assmtQuestionList", local_ans);
+
+//console.log("****STATE****");
+//console.log(JSON.stringify (api.state.assmtQuestionList, null, 4));
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-05 15:59:55</sys_created_on>
+        <sys_id>56917767473e31105d6c8fd4f16d4304</sys_id>
+        <sys_mod_count>153</sys_mod_count>
+        <sys_name>Handle Question Answered</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_client_script_56917767473e31105d6c8fd4f16d4304</sys_update_name>
+        <sys_updated_by>kate.flood</sys_updated_by>
+        <sys_updated_on>2023-12-12 16:39:09</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

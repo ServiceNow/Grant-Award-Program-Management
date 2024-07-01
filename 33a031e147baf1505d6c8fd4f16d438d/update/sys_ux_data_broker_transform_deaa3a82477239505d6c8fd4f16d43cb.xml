@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_award_mgmt.Get Award Data</api_name>
+        <description>Returns the required data for the user on the Portal. &#13;
+Returns the NSF Engine title and the list of Awards &amp; Deliverables for the specified User.&#13;
+&#13;
+</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Award Data</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+ {&#13;
+    "name": "user_sys_id",&#13;
+    "label": "SysID of the logged in user",&#13;
+    "fieldType": "string",&#13;
+    "fieldType": "string",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "description": "SysID of the logged in user"&#13;
+   }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "SysID of the logged in user",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[/**
+ * Usage:
+var user_sys_id = '7d299eca473ef5505d6c8fd4f16d4360';
+gs.info("Awards with Deliverables: for user_sys_id " + user_sys_id);
+var result = transform({ user_sys_id: user_sys_id });
+gs.info(JSON.stringify(result, null, 4));
+ */
+function transform(input) {
+    var user_sys_id = input.user_sys_id;
+    var userOrganization = getUserOrganization(user_sys_id);
+    if (!userOrganization) {
+        gs.info("@UIB: No organization found for user_sys_id " + user_sys_id);
+        return {
+            "message": "No organization found for user_sys_id " + user_sys_id
+        };
+    }
+
+    var awards = getAwardsWithDeliverablesForOrganization(userOrganization);
+    return awards;
+
+    function getUserOrganization(userId) {
+        var teamMemberGR = new GlideRecord('x_snc_award_mgmt_nsf_award_team_member');
+        teamMemberGR.addQuery('sys_id', userId);
+        teamMemberGR.query();
+        if (teamMemberGR.next()) {
+            return teamMemberGR.organization.toString();
+        }
+        return null;
+    }
+
+    function getAwardsWithDeliverablesForOrganization(organizationId) {
+        var awardGR = new GlideRecord('x_snc_award_mgmt_nsf_award');
+        awardGR.addQuery('recipient', organizationId);
+        awardGR.query();
+
+        if (awardGR.next()) { // Assuming only one award is needed or returning the first one found.
+            var deliverablesData = getDeliverablesForAward(awardGR.sys_id.toString());
+            return {
+                'engine': awardGR.getDisplayValue("title"),
+                'deliverables': deliverablesData.deliverables,
+                'deliverableSysIds': deliverablesData.deliverableSysIds
+            };
+        }
+        return {
+            "message": "No awards found for organization_id " + organizationId
+        };
+    }
+
+    function getDeliverablesForAward(awardId) {
+        var deliverables = [];
+        var deliverableSysIds = [];
+        var deliverableGR = new GlideRecord('x_snc_award_mgmt_deliverable');
+        deliverableGR.addQuery('award', awardId);
+        deliverableGR.orderBy('due_date');
+        deliverableGR.query();
+
+        while (deliverableGR.next()) {
+            var due_date_string = deliverableGR.getValue("due_date");
+            var dueDate = new GlideDateTime(due_date_string);
+            var now = new GlideDateTime();
+            var diff = GlideDateTime.subtract(now, dueDate);
+            var days_until_due_date = diff.getRoundedDayPart();
+
+            var gd = new GlideDate();
+            gd.setValue(due_date_string);
+            var formatted_due_date = gd.getByFormat("MMMM dd, yyyy");
+
+            var deliverableItem = {
+                'sys_id': deliverableGR.sys_id.toString(),
+                'number': deliverableGR.number.toString(),
+                'type': deliverableGR.getDisplayValue("type"),
+                'stage': deliverableGR.getDisplayValue("stage"),
+                'state': deliverableGR.getDisplayValue("state"),
+                'due_date': formatted_due_date,
+                'days_until_due_date': days_until_due_date
+            };
+
+            deliverables.push(deliverableItem);
+            deliverableSysIds.push(deliverableGR.sys_id.toString());
+        }
+
+        var deliverableSysIdsString = deliverableSysIds.join(','); // Convert array to comma-separated string
+
+        return {
+            deliverables: deliverables,
+            deliverableSysIds: deliverableSysIdsString
+        };
+    }
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-30 19:57:28</sys_created_on>
+        <sys_id>deaa3a82477239505d6c8fd4f16d43cb</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Get Award Data</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_deaa3a82477239505d6c8fd4f16d43cb</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-02-06 23:21:04</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=deaa3a82477239505d6c8fd4f16d43cb"/>
+</record_update>

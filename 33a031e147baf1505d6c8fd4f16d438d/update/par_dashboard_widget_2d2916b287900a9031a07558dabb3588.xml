@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">36fe69bd363a7550a52bb01f7501392f</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1hmmk6mv2drqm8mpt2k8","filterName":"Year","filterComponentType":"singleselect","datasource":{"type":"table","table":{"id":"x_snc_award_mgmt_award_year"}},"targets":[{"type":"table","table":{"id":"x_snc_award_mgmt_deliverable"},"field":{"id":"award.award_year","type":"reference","reference":"x_snc_award_mgmt_award_year"}}],"defaultSelectedItems":[],"defaultSelectedDateRange":{"range":""},"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":false,"filterElementLayout":"vertical","enableClearFilter":true,"maxElements":500,"filterConfigurations":"@state.parFilters","cascadeScope":"bafe69bdd23a75503752ab65aaaadf2f","noDebounce":""}</component_props>
+        <h>3</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2024-02-15 14:55:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2d2916b287900a9031a07558dabb3588</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>par_dashboard_widget_2d2916b287900a9031a07558dabb3588</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-02-26 19:41:27</sys_updated_on>
+        <visualization/>
+        <w>33</w>
+        <widget_props/>
+        <x>8</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

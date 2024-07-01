@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="883fecf1477275505d6c8fd4f16d43a5" extends="sn_niem_case" label="Deliverable" max_length="40" name="x_snc_award_mgmt_deliverable" type="collection">
+        <element label="Engine" max_length="32" name="award" reference="x_snc_award_mgmt_nsf_award" type="reference"/>
+        <element label="Type" max_length="32" name="type" reference="x_snc_award_mgmt_deliverable_type" type="reference"/>
+        <element choice="1" label="Stage" max_length="40" name="stage" type="workflow">
+            <choice>
+                <element inactive_on_update="false" label="Review" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Approval" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Complete" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Submission" sequence="0" value="0"/>
+            </choice>
+        </element>
+        <element choice="3" label="Reviewer Recommendation" max_length="40" name="reviewer_recommendation" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Accept" sequence="0" value="accept"/>
+                <element inactive_on_update="false" label="Reject" sequence="1" value="reject"/>
+            </choice>
+        </element>
+        <element label="Document" max_length="40" name="document" type="file_attachment"/>
+    </element>
+</database>

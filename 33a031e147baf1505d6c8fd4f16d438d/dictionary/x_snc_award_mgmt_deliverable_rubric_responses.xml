@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2149bace473239505d6c8fd4f16d43f5" extends="sn_niem_assessment_qtn_resp" label="Deliverable Rubric Responses" max_length="40" name="x_snc_award_mgmt_deliverable_rubric_responses" type="collection"/>
+</database>

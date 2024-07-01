@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile">
+    <ais_search_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This is default AI Search profile for Award TEST </description>
+        <exclude_from_evaluation>false</exclude_from_evaluation>
+        <genius_result_assembly/>
+        <label>award-test Search Profile</label>
+        <name>x_snc_award_mgmt_poxollm_search_profile</name>
+        <publish_id>3217cc36-16fe-4bcd-aa7a-aef695bd9e79</publish_id>
+        <qna_model_id>bert-qa-model-1.1.6</qna_model_id>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_search_profile</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-29 20:10:38</sys_created_on>
+        <sys_id>4135fd7d6c7a75508e6c62e05330d4f6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>award-test Search Profile</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>ais_search_profile_4135fd7d6c7a75508e6c62e05330d4f6</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-30 21:30:54</sys_updated_on>
+    </ais_search_profile>
+</record_update>

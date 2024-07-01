@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Award Program Management App Config">3efe69bd413a755055670405c2d39536</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Activity</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="View Deliverable Default">f4412c7747b271105d6c8fd4f16d43c4</parent_macroponent>
+        <parent_macroponent_composition_element_id>ckijothhjjddaaaaaaxddeiiabcceezpbblii</parent_macroponent_composition_element_id>
+        <route_type>activity</route_type>
+        <screen_type display_value="Activity">ddee920a757ef5501718ad8d6000c9e5</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-05 21:31:03</sys_created_on>
+        <sys_id>2790013747b671105d6c8fd4f16d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_app_route_2790013747b671105d6c8fd4f16d433c</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-05 21:31:03</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=2790013747b671105d6c8fd4f16d433c"/>
+</record_update>

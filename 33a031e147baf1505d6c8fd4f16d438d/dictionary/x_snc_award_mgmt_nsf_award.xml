@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="52ffd97147f675505d6c8fd4f16d43d5" extends="sn_niem_award" label="NSF Award" max_length="40" name="x_snc_award_mgmt_nsf_award" type="collection">
+        <element label="Key technology areas" max_length="1024" name="key_technology_areas" reference="x_snc_award_mgmt_key_technology_areas" type="glide_list"/>
+        <element label="Type" max_length="32" name="type" reference="x_snc_award_mgmt_nsf_award_type" type="reference"/>
+        <element label="Award Year" max_length="32" name="award_year" reference="x_snc_award_mgmt_award_year" type="reference"/>
+        <index name="index">
+            <element name="award_year"/>
+        </index>
+        <index name="index2">
+            <element name="type"/>
+        </index>
+    </element>
+</database>

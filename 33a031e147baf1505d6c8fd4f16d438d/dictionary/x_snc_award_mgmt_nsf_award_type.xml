@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a8943c8c4737b5d05d6c8fd4f16d43c6" label="NSF Award Type" max_length="40" name="x_snc_award_mgmt_nsf_award_type" type="collection">
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

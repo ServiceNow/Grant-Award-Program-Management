@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="80f4ff3b476f75d05d6c8fd4f16d436d" label="Programmatic activity" max_length="40" name="x_snc_award_mgmt_programmatic_activity" type="collection">
+        <element label="Activity lead" max_length="40" name="activity_lead" type="string"/>
+        <element display="true" label="Title" max_length="40" name="title" type="string"/>
+        <element label="NSF Engine" max_length="32" name="award" reference="x_snc_award_mgmt_nsf_award" type="reference"/>
+        <element label="Activity lead email" max_length="40" name="activity_lead_email" type="string"/>
+        <element label="Description" max_length="200" name="description" type="string"/>
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="R&amp;D or Translation" sequence="1" value="R&amp;D or Translation"/>
+                <element inactive_on_update="false" label="Workforce development" sequence="2" value="Workforce development"/>
+                <element inactive_on_update="false" label="Ecosystem building" sequence="0" value="Ecosystem building"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="award"/>
+        </index>
+    </element>
+</database>

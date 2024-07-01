@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Landing Default">39fdc02647bab9505d6c8fd4f16d4303</macroponent>
+        <name>highlighted_value_1/color</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+var daysUntilDueDate = api.item.value.days_until_due_date;
+
+    var status;
+    if (daysUntilDueDate <= 30) {
+        status = 'critical';
+    } else if (daysUntilDueDate <= 60) {
+        status = 'warning';
+    } else if (daysUntilDueDate <= 80) {
+        status = 'moderate';
+    } else {
+        status = 'positive';
+    }
+
+    //console.log("Color Status: " + status);
+    return status;
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-09 03:48:07</sys_created_on>
+        <sys_id>6fc57c3c47cf39105d6c8fd4f16d4350</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>highlighted_value_1/color</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_client_script_6fc57c3c47cf39105d6c8fd4f16d4350</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-12 14:20:36</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">f6cc10d0470311103d2cb28a436d439e</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-29 01:33:41</sys_created_on>
+        <sys_id>27853d2987f6f15031a07558dabb351a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-29 01:33:41</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
