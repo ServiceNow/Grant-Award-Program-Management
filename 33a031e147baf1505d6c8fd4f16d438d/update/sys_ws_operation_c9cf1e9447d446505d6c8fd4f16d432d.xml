@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Add Programmatic Activity</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var requestBody = request.body;
+    var requestData = requestBody.data;
+
+    // Define valid categories
+    var validCategories = ['Ecosystem building', 'R&D or Translation', 'Workforce development'];
+
+    // Extract fields from requestData
+    var engineName = requestData.engineName; // Using engineName as the key to search
+    var activityLead = requestData.activity_lead;
+    var activityLeadEmail = requestData.activity_lead_email;
+    var category = requestData.category;
+    var title = requestData.title;
+    var description = requestData.description;
+
+    // Check for missing fields
+    var missingFields = [];
+    if (!engineName) missingFields.push('engineName'); // Checking if engineName is provided
+    if (!activityLead) missingFields.push('activity_lead');
+    if (!activityLeadEmail) missingFields.push('activity_lead_email');
+    if (!category) missingFields.push('category');
+    if (!title) missingFields.push('title');
+    if (!description) missingFields.push('description');
+
+    // Check if there are any missing fields first before validating the category or engineName
+    if (missingFields.length > 0) {
+        response.setStatus(400); // Bad Request
+        response.setBody({
+            status: "error",
+            message: "Missing required fields: " + missingFields.join(", ")
+        });
+        return; // Stop further execution
+    }
+
+    // Validate category
+    if (validCategories.indexOf(category) === -1) {
+        response.setStatus(400); // Bad Request
+        response.setBody({
+            status: "error",
+            message: "Invalid category '" + category + "'. Category must be one of " + validCategories.join(", ")
+        });
+        return;
+    }
+
+    // Now, validate engineName against the x_snc_award_mgmt_nsf_award table
+    var awardGR = new GlideRecord('x_snc_award_mgmt_nsf_award');
+    awardGR.addQuery('title', engineName); // Assuming 'name' is the correct field; adjust if necessary
+    awardGR.query();
+    if (!awardGR.next()) {
+        response.setStatus(400); // Bad Request
+        response.setBody({
+            status: "error",
+            message: "Invalid 'engineName' value. No matching record found in x_snc_award_mgmt_nsf_award for the provided name."
+        });
+        return;
+    }
+
+    var record = new GlideRecord('x_snc_award_mgmt_programmatic_activity');
+    record.initialize();
+
+    // Set field values on the record, using the sys_id from the found award record
+    record.setValue('award', awardGR.sys_id); // Assuming 'award' is the reference field to x_snc_award_mgmt_nsf_award
+    record.setValue('activity_lead', activityLead);
+    record.setValue('activity_lead_email', activityLeadEmail);
+    record.setValue('category', category);
+    record.setValue('title', title);
+    record.setValue('description', description);
+
+    // Define a response object with status and data
+    var responseObj = {
+        status: "success",
+        data: {}
+    };
+
+    // Insert the record and handle success/error
+    try {
+        var sysId = record.insert();
+        if (sysId) {
+            responseObj.data.sys_id = sysId; // Assign the sys_id of the new record
+            response.setStatus(201); // Created
+        } else {
+            throw new Error("Record insertion failed.");
+        }
+    } catch (error) {
+        responseObj.status = "error";
+        responseObj.data.message = error.message;
+        response.setStatus(500); // Internal Server Error
+    }
+
+    // Set the response body
+    response.setBody(responseObj);
+
+})(request, response);
+]]></operation_script>
+        <operation_uri>/api/x_snc_award_mgmt/add_programmatic_activity</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2024-02-07 21:00:06</sys_created_on>
+        <sys_id>c9cf1e9447d446505d6c8fd4f16d432d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Add Programmatic Activity</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ws_operation_c9cf1e9447d446505d6c8fd4f16d432d</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-02-08 15:00:02</sys_updated_on>
+        <web_service_definition display_value="Add Programmatic Activity">dfafd69447d446505d6c8fd4f16d4352</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

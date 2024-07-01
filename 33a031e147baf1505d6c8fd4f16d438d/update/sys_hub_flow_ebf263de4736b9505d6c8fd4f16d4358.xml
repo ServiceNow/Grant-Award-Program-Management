@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5112000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Set Deliverables Due Date when the Award start date changes</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>set_deliverables_due_date</internal_name>
+        <label_cache>[{"name":"3dfc15e0-110b-4abd-a735-60a563412cd9.item.type","label":"2 - For Each➛Deliverable Record➛Type","reference":"x_snc_award_mgmt_deliverable_type","reference_display":"Deliverable Type","type":"reference","base_type":"reference","parent_table_name":"x_snc_award_mgmt_deliverable","column_name":"type"},{"name":"6728af7f-0f3b-4313-92e3-a89ffcc068d8.Records","label":"1 - Look Up Records➛Deliverable Records","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛NSF Award Record","reference":"x_snc_award_mgmt_nsf_award","reference_display":"NSF Award","type":"reference","base_type":"reference","attributes":{}},{"name":"3dfc15e0-110b-4abd-a735-60a563412cd9.item","label":"2 - For Each➛Deliverable Record","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created or Updated_1.current.start_date","label":"Trigger - Record Created or Updated➛NSF Award Record➛Start Date","reference":"","reference_display":"Start Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_award_mgmt_nsf_award","column_name":"start_date"}]</label_cache>
+        <master_snapshot>7b76bb9647f6b9505d6c8fd4f16d43eb</master_snapshot>
+        <name>Set Deliverables Due Date</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>c486fb9647f6b9505d6c8fd4f16d43ad</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:27:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebf263de4736b9505d6c8fd4f16d4358</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Set Deliverables Due Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_hub_flow_ebf263de4736b9505d6c8fd4f16d4358</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_award_mgmt_nsf_award">start_dateVALCHANGES<item endquery="false" field="start_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c486fb9647f6b9505d6c8fd4f16d43ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <table>x_snc_award_mgmt_nsf_award</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>ebf263de4736b9505d6c8fd4f16d4358</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>c086fb9647f6b9505d6c8fd4f16d43ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <trigger display_value="">c486fb9647f6b9505d6c8fd4f16d43ad</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT INc086fb9647f6b9505d6c8fd4f16d43ae"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT INb773afde4736b9505d6c8fd4f16d43e3"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>b773afde4736b9505d6c8fd4f16d43e3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b773afde4736b9505d6c8fd4f16d43e3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b773afde4736b9505d6c8fd4f16d43e3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>bb73afde4736b9505d6c8fd4f16d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:29:28</sys_updated_on>
+        <value>x_snc_award_mgmt_nsf_award</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b773afde4736b9505d6c8fd4f16d43e3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>f773afde4736b9505d6c8fd4f16d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:29:28</sys_updated_on>
+        <value>start_dateVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=b773afde4736b9505d6c8fd4f16d43e3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT IN63f263de4736b9505d6c8fd4f16d435a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ebf263de4736b9505d6c8fd4f16d4358</id>
+        <name>Set Deliverables Due Date</name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:27:17</sys_created_on>
+        <sys_id>63f263de4736b9505d6c8fd4f16d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:27:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=63f263de4736b9505d6c8fd4f16d435a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT IN6b736fde4736b9505d6c8fd4f16d43c8,a3736fde4736b9505d6c8fd4f16d43c4,f3736fde4736b9505d6c8fd4f16d43cc"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">4533685c47c311103d2cb28a436d43dc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</model>
+        <model_id>ebf263de4736b9505d6c8fd4f16d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>6b736fde4736b9505d6c8fd4f16d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:29:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6b736fde4736b9505d6c8fd4f16d43c8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</model>
+        <model_id>ebf263de4736b9505d6c8fd4f16d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>a3736fde4736b9505d6c8fd4f16d43c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a3736fde4736b9505d6c8fd4f16d43c4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</model>
+        <model_id>ebf263de4736b9505d6c8fd4f16d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>f3736fde4736b9505d6c8fd4f16d43cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f3736fde4736b9505d6c8fd4f16d43cc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT IN12746b924776b9505d6c8fd4f16d437b,d3a4f7d247f6b9505d6c8fd4f16d4348"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:33:44</sys_created_on>
+        <sys_id>12746b924776b9505d6c8fd4f16d437b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <ui_id>6728af7f-0f3b-4313-92e3-a89ffcc068d8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=12746b924776b9505d6c8fd4f16d437b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12746b924776b9505d6c8fd4f16d437b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>d376bb9647f6b9505d6c8fd4f16d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <value>x_snc_award_mgmt_deliverable</value>
+        <variable display_value="Table">3807ee090b30030085c083eb37673a08</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12746b924776b9505d6c8fd4f16d437b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:33:44</sys_created_on>
+        <sys_id>da746b924776b9505d6c8fd4f16d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:33:44</sys_updated_on>
+        <value>x_snc_award_mgmt_deliverable</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=12746b924776b9505d6c8fd4f16d437b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>12746b924776b9505d6c8fd4f16d437b</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:33:44</sys_created_on>
+        <sys_id>96746b924776b9505d6c8fd4f16d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:33:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>award={{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>12746b924776b9505d6c8fd4f16d437b</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>9b76bb9647f6b9505d6c8fd4f16d4398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d1c56ec50b30030085c083eb37673a50</table>
+        <value>award={{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>12746b924776b9505d6c8fd4f16d437b</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:33:44</sys_created_on>
+        <sys_id>5a746b924776b9505d6c8fd4f16d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:33:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>12746b924776b9505d6c8fd4f16d437b</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>5376bb9647f6b9505d6c8fd4f16d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d1c56ec50b30030085c083eb37673a50</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=12746b924776b9505d6c8fd4f16d437b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=12746b924776b9505d6c8fd4f16d437b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>3dfc15e0-110b-4abd-a735-60a563412cd9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>d3a4f7d247f6b9505d6c8fd4f16d4348</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <ui_id>c4bdeb47-b5c9-4e8e-803c-3652863fc938</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d3a4f7d247f6b9505d6c8fd4f16d4348"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d3a4f7d247f6b9505d6c8fd4f16d4348</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>1fa4f7d247f6b9505d6c8fd4f16d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:44:32</sys_updated_on>
+        <value>x_snc_award_mgmt_deliverable</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d3a4f7d247f6b9505d6c8fd4f16d4348</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>2f76bb9647f6b9505d6c8fd4f16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <value>x_snc_award_mgmt_deliverable</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d3a4f7d247f6b9505d6c8fd4f16d4348</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>6b76bb9647f6b9505d6c8fd4f16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <value>due_date=fd-scripted</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d3a4f7d247f6b9505d6c8fd4f16d4348</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>d3a4f7d247f6b9505d6c8fd4f16d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:44:32</sys_updated_on>
+        <value>due_date=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d3a4f7d247f6b9505d6c8fd4f16d4348"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d3a4f7d247f6b9505d6c8fd4f16d4348</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>2776bb9647f6b9505d6c8fd4f16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{3dfc15e0-110b-4abd-a735-60a563412cd9.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d3a4f7d247f6b9505d6c8fd4f16d4348</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>9fa4f7d247f6b9505d6c8fd4f16d434a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:44:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{3dfc15e0-110b-4abd-a735-60a563412cd9.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d3a4f7d247f6b9505d6c8fd4f16d4348</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>6376bb9647f6b9505d6c8fd4f16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d3a4f7d247f6b9505d6c8fd4f16d4348</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>d7a4f7d247f6b9505d6c8fd4f16d434a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:44:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d3a4f7d247f6b9505d6c8fd4f16d4348</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:28</sys_created_on>
+        <sys_id>e776bb9647f6b9505d6c8fd4f16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d3a4f7d247f6b9505d6c8fd4f16d4348</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>53a4f7d247f6b9505d6c8fd4f16d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:44:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d3a4f7d247f6b9505d6c8fd4f16d4348^sys_idNOT IN5ba4f7d247f6b9505d6c8fd4f16d4349"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>d3a4f7d247f6b9505d6c8fd4f16d4348</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"due_date":{"scriptActive":true,"script":"var award_start_date \u003d new GlideDateTime(fd_data.trigger.current.start_date); \nvar deliverable_month_due \u003d fd_data._2__for_each.item.type.month_due; \naward_start_date.addMonthsLocalTime(parseInt(deliverable_month_due)); \nvar deliverable_due_date \u003d award_start_date; \nreturn deliverable_due_date;","savedValue":""}}</script>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>5ba4f7d247f6b9505d6c8fd4f16d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:44:32</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d3a4f7d247f6b9505d6c8fd4f16d4348"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT IN9e746b924776b9505d6c8fd4f16d437e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">52746b924776b9505d6c8fd4f16d437e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:33:44</sys_created_on>
+        <sys_id>9e746b924776b9505d6c8fd4f16d437e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <ui_id>3dfc15e0-110b-4abd-a735-60a563412cd9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9e746b924776b9505d6c8fd4f16d437e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_ebf263de4736b9505d6c8fd4f16d4358^id=9e746b924776b9505d6c8fd4f16d437e"/>
+    <sys_element_mapping action="delete_multiple" query="id=9e746b924776b9505d6c8fd4f16d437e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>9e746b924776b9505d6c8fd4f16d437e</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:33:44</sys_created_on>
+        <sys_id>96746b924776b9505d6c8fd4f16d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:33:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{6728af7f-0f3b-4313-92e3-a89ffcc068d8.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9e746b924776b9505d6c8fd4f16d437e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9e746b924776b9505d6c8fd4f16d437e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT INdfa4f7d247f6b9505d6c8fd4f16d4333"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=eacbe44d-5532-4650-9eb0-cf344616218d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>variable</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</model>
+        <model_id>ebf263de4736b9505d6c8fd4f16d4358</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_ebf263de4736b9505d6c8fd4f16d4358</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:44:32</sys_created_on>
+        <sys_id>dfa4f7d247f6b9505d6c8fd4f16d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:44:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT IN6b736fde4736b9505d6c8fd4f16d43c7,b373afde4736b9505d6c8fd4f16d43e0,f3736fde4736b9505d6c8fd4f16d43cb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>6b736fde4736b9505d6c8fd4f16d43c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:29:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>b373afde4736b9505d6c8fd4f16d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:29:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 17:29:28</sys_created_on>
+        <sys_id>f3736fde4736b9505d6c8fd4f16d43cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 17:29:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ebf263de4736b9505d6c8fd4f16d4358"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Set Deliverables Due Date when the Award start date changes</description>
+        <flow_priority/>
+        <internal_name>set_deliverables_due_date</internal_name>
+        <label_cache>[{"name":"3dfc15e0-110b-4abd-a735-60a563412cd9.item.type","label":"2 - For Each➛Deliverable Record➛Type","reference":"x_snc_award_mgmt_deliverable_type","reference_display":"Deliverable Type","type":"reference","base_type":"reference","parent_table_name":"x_snc_award_mgmt_deliverable","column_name":"type"},{"name":"6728af7f-0f3b-4313-92e3-a89ffcc068d8.Records","label":"1 - Look Up Records➛Deliverable Records","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛NSF Award Record","reference":"x_snc_award_mgmt_nsf_award","reference_display":"NSF Award","type":"reference","base_type":"reference","attributes":{}},{"name":"3dfc15e0-110b-4abd-a735-60a563412cd9.item","label":"2 - For Each➛Deliverable Record","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created or Updated_1.current.start_date","label":"Trigger - Record Created or Updated➛NSF Award Record➛Start Date","reference":"","reference_display":"Start Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_award_mgmt_nsf_award","column_name":"start_date"}]</label_cache>
+        <master>true</master>
+        <name>Set Deliverables Due Date</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Set Deliverables Due Date">ebf263de4736b9505d6c8fd4f16d4358</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7b76bb9647f6b9505d6c8fd4f16d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7b76bb9647f6b9505d6c8fd4f16d43eb^sys_idNOT INf776fb9647f6b9505d6c8fd4f16d4386"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>f776fb9647f6b9505d6c8fd4f16d4386</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f776fb9647f6b9505d6c8fd4f16d4386"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f776fb9647f6b9505d6c8fd4f16d4386</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>3776fb9647f6b9505d6c8fd4f16d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <value>x_snc_award_mgmt_nsf_award</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f776fb9647f6b9505d6c8fd4f16d4386</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>7376fb9647f6b9505d6c8fd4f16d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <value>start_dateVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=f776fb9647f6b9505d6c8fd4f16d4386"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7b76bb9647f6b9505d6c8fd4f16d43eb^sys_idNOT IN7b76bb9647f6b9505d6c8fd4f16d43ec"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7b76bb9647f6b9505d6c8fd4f16d43eb</id>
+        <name>Set Deliverables Due Date</name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>7b76bb9647f6b9505d6c8fd4f16d43ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7b76bb9647f6b9505d6c8fd4f16d43ec"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7b76bb9647f6b9505d6c8fd4f16d43eb^sys_idNOT IN3b76fb9647f6b9505d6c8fd4f16d4308,3f76bb9647f6b9505d6c8fd4f16d43ed,7376fb9647f6b9505d6c8fd4f16d4300"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</model>
+        <model_id>7b76bb9647f6b9505d6c8fd4f16d43eb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>3b76fb9647f6b9505d6c8fd4f16d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3b76fb9647f6b9505d6c8fd4f16d4308"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</model>
+        <model_id>7b76bb9647f6b9505d6c8fd4f16d43eb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>3f76bb9647f6b9505d6c8fd4f16d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3f76bb9647f6b9505d6c8fd4f16d43ed"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</model>
+        <model_id>7b76bb9647f6b9505d6c8fd4f16d43eb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>7376fb9647f6b9505d6c8fd4f16d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7376fb9647f6b9505d6c8fd4f16d4300"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7b76bb9647f6b9505d6c8fd4f16d43eb^sys_idNOT IN3376fb9647f6b9505d6c8fd4f16d4384,ff76fb9647f6b9505d6c8fd4f16d437a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>3dfc15e0-110b-4abd-a735-60a563412cd9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>3376fb9647f6b9505d6c8fd4f16d4384</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <ui_id>c4bdeb47-b5c9-4e8e-803c-3652863fc938</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3376fb9647f6b9505d6c8fd4f16d4384"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3376fb9647f6b9505d6c8fd4f16d4384</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>3376fb9647f6b9505d6c8fd4f16d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <value>due_date=fd-scripted</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3376fb9647f6b9505d6c8fd4f16d4384</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>f376fb9647f6b9505d6c8fd4f16d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <value>x_snc_award_mgmt_deliverable</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3376fb9647f6b9505d6c8fd4f16d4384"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3376fb9647f6b9505d6c8fd4f16d4384</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>fb76fb9647f6b9505d6c8fd4f16d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{3dfc15e0-110b-4abd-a735-60a563412cd9.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3376fb9647f6b9505d6c8fd4f16d4384</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>3b76fb9647f6b9505d6c8fd4f16d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3376fb9647f6b9505d6c8fd4f16d4384</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>bf76fb9647f6b9505d6c8fd4f16d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3376fb9647f6b9505d6c8fd4f16d4384^sys_idNOT IN3376fb9647f6b9505d6c8fd4f16d4385"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>3376fb9647f6b9505d6c8fd4f16d4384</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"due_date":{"scriptActive":true,"script":"var award_start_date \u003d new GlideDateTime(fd_data.trigger.current.start_date); \nvar deliverable_month_due \u003d fd_data._2__for_each.item.type.month_due; \naward_start_date.addMonthsLocalTime(parseInt(deliverable_month_due)); \nvar deliverable_due_date \u003d award_start_date; \nreturn deliverable_due_date;","savedValue":""}}</script>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_id>3376fb9647f6b9505d6c8fd4f16d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3376fb9647f6b9505d6c8fd4f16d4384"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>ff76fb9647f6b9505d6c8fd4f16d437a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <ui_id>6728af7f-0f3b-4313-92e3-a89ffcc068d8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ff76fb9647f6b9505d6c8fd4f16d437a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ff76fb9647f6b9505d6c8fd4f16d437a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>b376fb9647f6b9505d6c8fd4f16d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <value>x_snc_award_mgmt_deliverable</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ff76fb9647f6b9505d6c8fd4f16d437a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ff76fb9647f6b9505d6c8fd4f16d437a</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>7f76fb9647f6b9505d6c8fd4f16d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>award={{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>ff76fb9647f6b9505d6c8fd4f16d437a</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>3376fb9647f6b9505d6c8fd4f16d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ff76fb9647f6b9505d6c8fd4f16d437a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ff76fb9647f6b9505d6c8fd4f16d437a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7b76bb9647f6b9505d6c8fd4f16d43eb^sys_idNOT IN3376fb9647f6b9505d6c8fd4f16d4342"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">52746b924776b9505d6c8fd4f16d437e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>3376fb9647f6b9505d6c8fd4f16d4342</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <ui_id>3dfc15e0-110b-4abd-a735-60a563412cd9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3376fb9647f6b9505d6c8fd4f16d4342"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_7b76bb9647f6b9505d6c8fd4f16d43eb^id=3376fb9647f6b9505d6c8fd4f16d4342"/>
+    <sys_element_mapping action="delete_multiple" query="id=3376fb9647f6b9505d6c8fd4f16d4342"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>3376fb9647f6b9505d6c8fd4f16d4342</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>b776fb9647f6b9505d6c8fd4f16d4345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{6728af7f-0f3b-4313-92e3-a89ffcc068d8.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3376fb9647f6b9505d6c8fd4f16d4342"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3376fb9647f6b9505d6c8fd4f16d4342"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7b76bb9647f6b9505d6c8fd4f16d43eb^sys_idNOT INfb76fb9647f6b9505d6c8fd4f16d432f"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=eacbe44d-5532-4650-9eb0-cf344616218d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>variable</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Set Deliverables Due Date">7b76bb9647f6b9505d6c8fd4f16d43eb</model>
+        <model_id>7b76bb9647f6b9505d6c8fd4f16d43eb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7b76bb9647f6b9505d6c8fd4f16d43eb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>fb76fb9647f6b9505d6c8fd4f16d432f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb^sys_idNOT IN3376fb9647f6b9505d6c8fd4f16d4326,bf76fb9647f6b9505d6c8fd4f16d4304,f776bb9647f6b9505d6c8fd4f16d43fc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>3376fb9647f6b9505d6c8fd4f16d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>bf76fb9647f6b9505d6c8fd4f16d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:29</sys_created_on>
+        <sys_id>f776bb9647f6b9505d6c8fd4f16d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7b76bb9647f6b9505d6c8fd4f16d43eb"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ebf263de4736b9505d6c8fd4f16d4358</sys_id>
+        <latest_snapshot>7b76bb9647f6b9505d6c8fd4f16d43eb</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch5-12-01-2023_12-11-2023_2006.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ebf263de4736b9505d6c8fd4f16d4358^sys_idNOT IN0886fb9647f6b9505d6c8fd4f16d43af"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"0886fb9647f6b9505d6c8fd4f16d43af","name":"plan","plan_signature":null}}</plan>
+        <plan_id>ebf263de4736b9505d6c8fd4f16d4358</plan_id>
+        <snapshot>50863c804777b5d05d6c8fd4f16d4368</snapshot>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 18:52:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0886fb9647f6b9505d6c8fd4f16d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 18:52:30</sys_updated_on>
+        <trigger display_value="">c486fb9647f6b9505d6c8fd4f16d43ad</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ebf263de4736b9505d6c8fd4f16d4358"/>
+</record_update>

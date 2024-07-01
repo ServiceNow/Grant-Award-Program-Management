@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_niem_state">
+    <sn_niem_state action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <fips_code/>
+        <name>MD</name>
+        <postal_abbreviation/>
+        <sys_class_name>sn_niem_state</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-29 18:40:06</sys_created_on>
+        <sys_id>3270adfd87b2755031a07558dabb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MD</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sn_niem_state_3270adfd87b2755031a07558dabb3580</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-29 18:40:06</sys_updated_on>
+    </sn_niem_state>
+</record_update>

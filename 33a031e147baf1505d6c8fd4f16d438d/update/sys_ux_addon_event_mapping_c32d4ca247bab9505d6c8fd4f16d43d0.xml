@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <controller/>
+        <description/>
+        <name>Edit Record In New Tab</name>
+        <parent_macroponent/>
+        <source_component/>
+        <source_da display_value="edit_({{count}})">d655b480c59f5510f877a9d5199de99c</source_da>
+        <source_element_id>nam_kpis</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-01 20:31:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c32d4ca247bab9505d6c8fd4f16d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Edit Record In New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_c32d4ca247bab9505d6c8fd4f16d43d0</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-01 20:31:34</sys_updated_on>
+        <target_event display_value="Edit NAM KPIs">e713bad2a32211103ebf37af26fcdabe</target_event>
+        <target_payload_mapping>{
+    "container": {
+        "sysId": {
+            "type": "JSON_LITERAL"
+        }
+    },
+    "type": "MAP_CONTAINER"
+}</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+</record_update>

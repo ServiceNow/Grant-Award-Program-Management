@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source>x_snc_award_mgmt_deliverable,x_snc_award_mgmt_deliverable_type,x_snc_award_mgmt_nsf_award,x_snc_award_mgmt_organization,x_snc_award_mgmt_nsf_organization,x_snc_award_mgmt_nsf_program</data_source>
+        <derived>true</derived>
+        <field/>
+        <label>award-test Search Profile Default Spell Check Dictionary</label>
+        <last_derived>2024-07-01 02:26:56</last_derived>
+        <locale>en</locale>
+        <name>x_snc_award_mgmt_award_test_search_profile_default_spell_check_dictionary</name>
+        <publish_id>d2571024-87e7-4404-a02e-4db2485cb1d1</publish_id>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-29 20:10:42</sys_created_on>
+        <sys_id>4e35b1bd477a75505d6c8fd4f16d437a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>x_snc_award_mgmt_award_test_search_profile_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>ais_dictionary_4e35b1bd477a75505d6c8fd4f16d437a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 08:00:08</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+</record_update>

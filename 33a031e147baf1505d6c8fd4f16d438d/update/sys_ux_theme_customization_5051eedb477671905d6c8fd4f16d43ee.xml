@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization">
+    <sys_ux_theme_customization action="INSERT_OR_UPDATE">
+        <customization>{"colors":[{"id":"--now-color_background--primary","value":"255, 255, 255","type":"color_hook_overridden"},{"id":"--now-color_surface--brand","value":"108, 108, 108","type":"color_hook_overridden"},{"id":"--now-color_chrome--brand","value":"0, 86, 153","type":"color_hook_overridden"},{"id":"--now-color_divider--primary","value":"211, 179, 78","type":"color_hook_overridden"}],"feedback":[],"groupName":""}</customization>
+        <name>Award Management Theme</name>
+        <sys_class_name>sys_ux_theme_customization</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-04 15:14:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5051eedb477671905d6c8fd4f16d43ee</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Award Management Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_theme_customization_5051eedb477671905d6c8fd4f16d43ee</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-04 16:15:20</sys_updated_on>
+        <theme display_value="Award Management Theme">4851aa9b477671905d6c8fd4f16d4365</theme>
+    </sys_ux_theme_customization>
+</record_update>

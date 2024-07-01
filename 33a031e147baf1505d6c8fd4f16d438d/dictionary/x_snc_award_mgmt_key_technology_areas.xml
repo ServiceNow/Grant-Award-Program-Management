@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9262850c479482505d6c8fd4f16d430d" label="Key technology areas" max_length="40" name="x_snc_award_mgmt_key_technology_areas" type="collection">
+        <element display="true" label="Name" mandatory="true" max_length="60" name="name" type="string"/>
+        <element label="Description" max_length="200" name="description" type="string"/>
+    </element>
+</database>

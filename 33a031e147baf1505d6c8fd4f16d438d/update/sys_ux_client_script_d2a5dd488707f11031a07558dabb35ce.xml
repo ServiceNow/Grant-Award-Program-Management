@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Deliverable Record Page">d80f6dbd473a75505d6c8fd4f16d437d</macroponent>
+        <name>rubric_choices/selectedItems</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var choices = [];
+    //console.log("SELECTED ITEM: " + api.item.index);
+    var sel_item = api.item.index;
+
+    var questionList = api.state.assmtQuestionList[0].questionList[sel_item];
+    //console.log(JSON.stringify(questionList, null, 4));
+    var choice = questionList.response;
+    var responseOptions = questionList.responseOptions;
+    //console.log("response = " + choice);
+    //console.log("***responseOptions VALUES**");
+    //console.log(JSON.stringify(responseOptions, null, 4));
+    
+    choices.push(choice);
+    //console.log("choices: " + JSON.stringify(choices));
+    var choices_str = JSON.stringify(choices);
+    return choices_str;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>kate.flood</sys_created_by>
+        <sys_created_on>2023-12-06 18:02:16</sys_created_on>
+        <sys_id>d2a5dd488707f11031a07558dabb35ce</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>rubric_choices/selectedItems</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_client_script_d2a5dd488707f11031a07558dabb35ce</sys_update_name>
+        <sys_updated_by>kate.flood</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:52:13</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

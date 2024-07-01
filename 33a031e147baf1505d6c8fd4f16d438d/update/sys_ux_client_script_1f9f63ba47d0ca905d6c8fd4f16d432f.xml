@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Landing Default copy 1">839fe77a47d0ca905d6c8fd4f16d4341</macroponent>
+        <name>stepper_1/items</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    const stages = JSON.parse(JSON.stringify(api.state.stages));
+    const current_stage = api.item.value.stage; //"Approval";
+    const current_state = api.item.value.state; // pending
+
+
+    //console.log("current stage = " + current_stage);
+    //console.log("current state = " + current_state);
+
+    // Iterate through the stages and update progress and sublabel
+    // Set sublabel to current_state
+    // Set progress to 'none' for stages after the current stage
+    var foundCurrentStage = false;
+    for (var i = 0; i < stages.length; i++) {
+        if (stages[i].id === current_stage) {
+            stages[i].progress = "complete";
+            stages[i].sublabel = current_state; 
+            foundCurrentStage = true;
+        } else if (!foundCurrentStage) {
+            stages[i].progress = "done";
+        } else {
+            stages[i].progress = "none"; 
+        }
+    }
+   // console.log("stages  = " + JSON.stringify(stages, null, 4));
+
+    return stages;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2024-02-15 21:13:34</sys_created_on>
+        <sys_id>1f9f63ba47d0ca905d6c8fd4f16d432f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>stepper_1/items</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_client_script_1f9f63ba47d0ca905d6c8fd4f16d432f</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-02-15 21:13:34</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

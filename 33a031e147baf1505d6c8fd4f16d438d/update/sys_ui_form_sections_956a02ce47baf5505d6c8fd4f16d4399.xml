@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="956a02ce47baf5505d6c8fd4f16d4399" sys_domain="global" table="x_snc_award_mgmt_nsf_contact" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>296a860247faf5505d6c8fd4f16d436e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_award_mgmt_nsf_contact" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">956a02ce47baf5505d6c8fd4f16d4399</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">1d6a860247faf5505d6c8fd4f16d4349</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>196a860247faf5505d6c8fd4f16d4345</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_award_mgmt_nsf_contact" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">956a02ce47baf5505d6c8fd4f16d4399</sys_ui_form>
+            <sys_ui_section caption="Photos" display_value="Photos" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">d56a860247faf5505d6c8fd4f16d4340</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>116a860247faf5505d6c8fd4f16d4340</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_award_mgmt_nsf_contact" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">956a02ce47baf5505d6c8fd4f16d4399</sys_ui_form>
+            <sys_ui_section caption="Demographic Details" display_value="Demographic Details" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">1d6a860247faf5505d6c8fd4f16d4327</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>556a860247faf5505d6c8fd4f16d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_award_mgmt_nsf_contact" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">956a02ce47baf5505d6c8fd4f16d4399</sys_ui_form>
+            <sys_ui_section caption="Contact Information" display_value="Contact Information" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">dd6a860247faf5505d6c8fd4f16d4345</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>516a860247faf5505d6c8fd4f16d4327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_award_mgmt_nsf_contact" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">956a02ce47baf5505d6c8fd4f16d4399</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_award_mgmt_nsf_contact" sys_domain="global" view="Default view">d56a02ce47baf5505d6c8fd4f16d439c</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_award_mgmt_nsf_contact</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2023-11-30 16:21:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>956a02ce47baf5505d6c8fd4f16d4399</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_award_mgmt_nsf_contact</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_956a02ce47baf5505d6c8fd4f16d4399</sys_update_name>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2023-11-30 16:21:42</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

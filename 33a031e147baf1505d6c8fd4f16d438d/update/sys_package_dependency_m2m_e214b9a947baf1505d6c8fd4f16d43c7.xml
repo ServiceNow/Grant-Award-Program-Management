@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="NIEM" source="sn_niem">1e4f5cdbb8320110fa9b96d4e616a3c5</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-29 01:27:21</sys_created_on>
+        <sys_id>e214b9a947baf1505d6c8fd4f16d43c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-29 01:27:21</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

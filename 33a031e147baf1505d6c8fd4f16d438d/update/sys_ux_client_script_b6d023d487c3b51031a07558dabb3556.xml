@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Deliverable Record Page">d80f6dbd473a75505d6c8fd4f16d437d</macroponent>
+        <name>Handle Summary Updated</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    //console.log(JSON.stringify(event, null, 4));
+    var local_ans = api.state.assmtQuestionList;
+    var summary = event.payload.fieldValue;
+    //console.log("updated value = " + summary);
+    local_ans[0].summary = summary;
+    api.setState("assmtQuestionList", local_ans);
+    //console.log("new value = " + local_ans[0].summary);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>kate.flood</sys_created_by>
+        <sys_created_on>2023-12-07 22:36:10</sys_created_on>
+        <sys_id>b6d023d487c3b51031a07558dabb3556</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Handle Summary Updated</sys_name>
+        <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
+        <sys_update_name>sys_ux_client_script_b6d023d487c3b51031a07558dabb3556</sys_update_name>
+        <sys_updated_by>kate.flood</sys_updated_by>
+        <sys_updated_on>2023-12-12 14:05:57</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
