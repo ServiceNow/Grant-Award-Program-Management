@@ -1,114 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="NSF Award" section_id="c336a98c47d882505d6c8fd4f16d433d" sys_domain="global" table="x_snc_award_mgmt_nsf_award" version="3" view="workspace-award-program-management-0">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>abstract</element>
+            <element>title</element>
             <position>0</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>ca56ed8c47d882505d6c8fd4f16d43bb</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>fbaa1255c3c29e9016eb2385e0013126</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>abstract</element>
+            <position>1</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>3baa1255c3c29e9016eb2385e0013127</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>program</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>c256ed8c47d882505d6c8fd4f16d43bc</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>33aa1255c3c29e9016eb2385e0013128</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>program_manager</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>ca56ed8c47d882505d6c8fd4f16d43bc</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>3baa1255c3c29e9016eb2385e0013128</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recipient</element>
+            <position>4</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>33aa1255c3c29e9016eb2385e0013129</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>key_technology_areas</element>
-            <position>3</position>
+            <position>5</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>c256ed8c47d882505d6c8fd4f16d43bd</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>3baa1255c3c29e9016eb2385e0013129</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
-            <position>4</position>
+            <position>6</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>ca56ed8c47d882505d6c8fd4f16d43bd</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>33aa1255c3c29e9016eb2385e001312a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>start_date</element>
-            <position>5</position>
+            <position>7</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>c256ed8c47d882505d6c8fd4f16d43be</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>3baa1255c3c29e9016eb2385e001312a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>6</position>
+            <position>8</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>ca56ed8c47d882505d6c8fd4f16d43be</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>33aa1255c3c29e9016eb2385e001312b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>end_date</element>
-            <position>7</position>
+            <position>9</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2024-02-06 22:10:31</sys_created_on>
-            <sys_id>c256ed8c47d882505d6c8fd4f16d43bf</sys_id>
+            <sys_created_on>2024-11-22 19:12:38</sys_created_on>
+            <sys_id>3baa1255c3c29e9016eb2385e001312b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NSF Award" display_value="NSF Award" name="x_snc_award_mgmt_nsf_award" sys_domain="global" view="bafe69bdf13a75500126e36a0d39f12c">c336a98c47d882505d6c8fd4f16d433d</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2024-02-06 22:10:31</sys_updated_on>
+            <sys_updated_on>2024-11-22 19:12:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

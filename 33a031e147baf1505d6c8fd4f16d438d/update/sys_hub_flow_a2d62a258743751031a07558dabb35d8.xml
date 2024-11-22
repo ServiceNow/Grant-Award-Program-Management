@@ -4,7 +4,7 @@
         <acls/>
         <active>false</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=181998000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=181998000,viewActivatedIn=diagramming</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -16,10 +16,11 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>setup_demo</internal_name>
-        <label_cache>[{"name":"2e586fb7-dade-4135-96a6-8c1514be2073.item","label":"3 - For Each➛Deliverable Rubric Record","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"459d5e61-67ac-4aeb-8e7b-666496e5dd8c.Records","label":"2 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5a650a3f-810f-41a6-93f9-8133bdde569d.item","label":"7 - For Each➛Deliverable Rubric Responses Record","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"18659021-ca8e-4d6a-879c-7b4bef37db6e.Records","label":"6 - Look Up Records➛Deliverable Rubric Responses Records","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4642f2bb-8b3a-4988-9121-00cfc1111343.item","label":"5 - For Each➛Deliverable Rubric Record","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c8ede64e-9430-4fd1-a778-a03730fd8d7c.Records","label":"4 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.award_number","label":"Flow Variables➛award number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"08eeb937-5171-4b59-8696-c513f7b8dcd6"}},{"name":"173dfc3c-2455-4696-a4b1-24fc2cd51304.record.sys_id","label":"13 - Create Record➛Deliverable Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_award_mgmt_deliverable","column_name":"sys_id"},{"name":"173dfc3c-2455-4696-a4b1-24fc2cd51304.record.type.name","label":"13 - Create Record➛Deliverable Record➛Type➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_snc_award_mgmt_deliverable_type","column_name":"name"},{"name":"Created_1.current","label":"Trigger - Record Created➛NSF Award Record","reference":"x_snc_award_mgmt_nsf_award","reference_display":"NSF Award","type":"reference","base_type":"reference","attributes":{}},{"name":"01dcd866-ede0-4277-9451-d2a481f26e49.Records","label":"4 - Look Up Records➛Deliverable Rubric Responses Records","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8052c77a-d078-483d-a4c9-a0bd4844407b.item","label":"5 - For Each➛Deliverable Rubric Responses Record","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current.award_number","label":"Trigger - Record Updated➛Award Record➛Award Number","reference":"","reference_display":"Award Number","type":"string","base_type":"string","parent_table_name":"sn_niem_award","column_name":"award_number"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛NSF Award Record","reference":"x_snc_award_mgmt_nsf_award","reference_display":"NSF Award","type":"reference","base_type":"reference","attributes":{}},{"name":"b5f6c448-280d-4e36-bffb-e50cb2ef7684.Records","label":"1 - Look Up Records➛Deliverable Records","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d88e44ec-df9c-4051-bf6a-b3dd448d83b0.item","label":"2 - For Each➛Deliverable Record","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"07b35eab-985a-4af1-84c5-5e63e352d4b2.Records","label":"3 - Look Up Records➛Deliverable Rubric Records","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ea3f763d-e431-40cb-a737-4da531657d70.item","label":"4 - For Each➛Deliverable Rubric Record","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"452afb9a-9a2a-4b42-9df7-63b97360dc09.Records","label":"5 - Look Up Records➛Deliverable Rubric Responses Records","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b1556a38-0381-4c13-91a5-5bf03caad1b2.item","label":"6 - For Each➛Deliverable Rubric Responses Record","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <label_cache>[{"name":"b1556a38-0381-4c13-91a5-5bf03caad1b2.item","label":"6 - For Each➛Deliverable Rubric Responses Record","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"452afb9a-9a2a-4b42-9df7-63b97360dc09.Records","label":"5 - Look Up Records➛Deliverable Rubric Responses Records","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ea3f763d-e431-40cb-a737-4da531657d70.item","label":"4 - For Each➛Deliverable Rubric Record","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"07b35eab-985a-4af1-84c5-5e63e352d4b2.Records","label":"3 - Look Up Records➛Deliverable Rubric Records","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d88e44ec-df9c-4051-bf6a-b3dd448d83b0.item","label":"2 - For Each➛Deliverable Record","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b5f6c448-280d-4e36-bffb-e50cb2ef7684.Records","label":"1 - Look Up Records➛Deliverable Records","reference":"x_snc_award_mgmt_deliverable","reference_display":"Deliverable Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛NSF Award Record","reference":"x_snc_award_mgmt_nsf_award","reference_display":"NSF Award","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.award_number","label":"Trigger - Record Updated➛Award Record➛Award Number","reference":"","reference_display":"Award Number","type":"string","base_type":"string","parent_table_name":"sn_niem_award","column_name":"award_number"},{"name":"8052c77a-d078-483d-a4c9-a0bd4844407b.item","label":"5 - For Each➛Deliverable Rubric Responses Record","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"01dcd866-ede0-4277-9451-d2a481f26e49.Records","label":"4 - Look Up Records➛Deliverable Rubric Responses Records","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛NSF Award Record","reference":"x_snc_award_mgmt_nsf_award","reference_display":"NSF Award","type":"reference","base_type":"reference","attributes":{}},{"name":"173dfc3c-2455-4696-a4b1-24fc2cd51304.record.type.name","label":"13 - Create Record➛Deliverable Record➛Type➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_snc_award_mgmt_deliverable_type","column_name":"name"},{"name":"173dfc3c-2455-4696-a4b1-24fc2cd51304.record.sys_id","label":"13 - Create Record➛Deliverable Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_award_mgmt_deliverable","column_name":"sys_id"},{"name":"flow_variable.award_number","label":"Flow Variables➛award number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"08eeb937-5171-4b59-8696-c513f7b8dcd6"}},{"name":"c8ede64e-9430-4fd1-a778-a03730fd8d7c.Records","label":"4 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4642f2bb-8b3a-4988-9121-00cfc1111343.item","label":"5 - For Each➛Deliverable Rubric Record","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"18659021-ca8e-4d6a-879c-7b4bef37db6e.Records","label":"6 - Look Up Records➛Deliverable Rubric Responses Records","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5a650a3f-810f-41a6-93f9-8133bdde569d.item","label":"7 - For Each➛Deliverable Rubric Responses Record","reference":"x_snc_award_mgmt_deliverable_rubric_responses","reference_display":"Deliverable Rubric Responses","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"459d5e61-67ac-4aeb-8e7b-666496e5dd8c.Records","label":"2 - Look Up Records➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e586fb7-dade-4135-96a6-8c1514be2073.item","label":"3 - For Each➛Deliverable Rubric Record","reference":"x_snc_award_mgmt_deliverable_rubric","reference_display":"Deliverable Rubric","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
-        <name>Setup Demo</name>
+        <master_snapshot_digest/>
+        <name>Cleanup Demo</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -37,68 +38,20 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a2d62a258743751031a07558dabb35d8</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_name>Setup Demo</sys_name>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Cleanup Demo</sys_name>
         <sys_overrides/>
         <sys_package display_value="Award Program Management" source="x_snc_award_mgmt">33a031e147baf1505d6c8fd4f16d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
         <sys_update_name>sys_hub_flow_a2d62a258743751031a07558dabb35d8</sys_update_name>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <type>flow</type>
+        <version>1</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=a2d62a258743751031a07558dabb35d8"/>
     <sys_variable_value action="delete_multiple" query="document_key=a2d62a258743751031a07558dabb35d8"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=a2d62a258743751031a07558dabb35d8^sys_idNOT IN482bf6e5470ffd105d6c8fd4f16d43f5"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
-        <comment/>
-        <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
-        <name>Updated</name>
-        <remote_sys_id/>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2023-12-11 16:53:20</sys_created_on>
-        <sys_id>482bf6e5470ffd105d6c8fd4f16d43f5</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:41</sys_updated_on>
-        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
-        <trigger_inputs/>
-        <trigger_outputs/>
-        <trigger_type>record_update</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=482bf6e5470ffd105d6c8fd4f16d43f5"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>482bf6e5470ffd105d6c8fd4f16d43f5</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2023-12-11 16:53:20</sys_created_on>
-        <sys_id>002bf6e5470ffd105d6c8fd4f16d43f7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 20:58:35</sys_updated_on>
-        <value>x_snc_award_mgmt_nsf_award</value>
-        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>482bf6e5470ffd105d6c8fd4f16d43f5</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2023-12-11 16:53:20</sys_created_on>
-        <sys_id>082bf6e5470ffd105d6c8fd4f16d43f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2023-12-11 16:53:20</sys_updated_on>
-        <value>^EQ</value>
-        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=482bf6e5470ffd105d6c8fd4f16d43f5"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=a2d62a258743751031a07558dabb35d8"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=a2d62a258743751031a07558dabb35d8^sys_idNOT IN2ad62a258743751031a07558dabb35d9"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -154,7 +107,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</model>
+        <model display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</model>
         <model_id>a2d62a258743751031a07558dabb35d8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_a2d62a258743751031a07558dabb35d8</name>
@@ -238,7 +191,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</model>
+        <model display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</model>
         <model_id>a2d62a258743751031a07558dabb35d8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_a2d62a258743751031a07558dabb35d8</name>
@@ -345,7 +298,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</model>
+        <model display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</model>
         <model_id>a2d62a258743751031a07558dabb35d8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_a2d62a258743751031a07558dabb35d8</name>
@@ -391,6 +344,55 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cc2bf6e5470ffd105d6c8fd4f16d43df"/>
     <sys_hub_flow_output action="delete_multiple" query="model=a2d62a258743751031a07558dabb35d8"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2d62a258743751031a07558dabb35d8"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a2d62a258743751031a07558dabb35d8^sys_idNOT IN482bf6e5470ffd105d6c8fd4f16d43f5"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-11 16:53:20</sys_created_on>
+        <sys_id>482bf6e5470ffd105d6c8fd4f16d43f5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:14</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=482bf6e5470ffd105d6c8fd4f16d43f5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>482bf6e5470ffd105d6c8fd4f16d43f5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-11 16:53:20</sys_created_on>
+        <sys_id>002bf6e5470ffd105d6c8fd4f16d43f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>kate.flood</sys_updated_by>
+        <sys_updated_on>2023-12-11 20:58:35</sys_updated_on>
+        <value>x_snc_award_mgmt_nsf_award</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>482bf6e5470ffd105d6c8fd4f16d43f5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-12-11 16:53:20</sys_created_on>
+        <sys_id>082bf6e5470ffd105d6c8fd4f16d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-12-11 16:53:20</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=482bf6e5470ffd105d6c8fd4f16d43f5"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=a2d62a258743751031a07558dabb35d8^sys_idNOT IN1b76372587cb751031a07558dabb3536,1f76372587cb751031a07558dabb3549,5376372587cb751031a07558dabb3527,5b76372587cb751031a07558dabb3541,5b76372587cb751031a07558dabb3557,9376372587cb751031a07558dabb3553,db76372587cb751031a07558dabb354e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -401,7 +403,7 @@
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <generation_source/>
         <order>3</order>
         <parent_ui_id>d88e44ec-df9c-4051-bf6a-b3dd448d83b0</parent_ui_id>
@@ -409,10 +411,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>1b76372587cb751031a07558dabb3536</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:14</sys_updated_on>
         <ui_id>07b35eab-985a-4af1-84c5-5e63e352d4b2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1b76372587cb751031a07558dabb3536"/>
@@ -466,7 +468,7 @@
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <generation_source/>
         <order>7</order>
         <parent_ui_id>b1556a38-0381-4c13-91a5-5bf03caad1b2</parent_ui_id>
@@ -474,10 +476,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>1f76372587cb751031a07558dabb3549</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <ui_id>82eee1a9-31c9-42e5-bb4e-f68aed5968f8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1f76372587cb751031a07558dabb3549"/>
@@ -505,7 +507,7 @@
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
@@ -513,10 +515,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>5376372587cb751031a07558dabb3527</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:14</sys_updated_on>
         <ui_id>b5f6c448-280d-4e36-bffb-e50cb2ef7684</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5376372587cb751031a07558dabb3527"/>
@@ -570,7 +572,7 @@
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <generation_source/>
         <order>5</order>
         <parent_ui_id>ea3f763d-e431-40cb-a737-4da531657d70</parent_ui_id>
@@ -578,10 +580,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>5b76372587cb751031a07558dabb3541</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <ui_id>452afb9a-9a2a-4b42-9df7-63b97360dc09</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5b76372587cb751031a07558dabb3541"/>
@@ -635,7 +637,7 @@
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <generation_source/>
         <order>10</order>
         <parent_ui_id/>
@@ -643,10 +645,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>5b76372587cb751031a07558dabb3557</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <ui_id>39fa070b-34ef-4493-a70c-d54f1439ca3b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5b76372587cb751031a07558dabb3557"/>
@@ -674,7 +676,7 @@
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <generation_source/>
         <order>9</order>
         <parent_ui_id>d88e44ec-df9c-4051-bf6a-b3dd448d83b0</parent_ui_id>
@@ -682,10 +684,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>9376372587cb751031a07558dabb3553</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <ui_id>eba2a54a-1197-4654-90c7-6368d1384735</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9376372587cb751031a07558dabb3553"/>
@@ -713,7 +715,7 @@
         <comment/>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <generation_source/>
         <order>8</order>
         <parent_ui_id>ea3f763d-e431-40cb-a737-4da531657d70</parent_ui_id>
@@ -721,10 +723,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>db76372587cb751031a07558dabb354e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <ui_id>47148dfc-4423-4af1-a975-5c0e64b3f2a1</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=db76372587cb751031a07558dabb354e"/>
@@ -743,7 +745,6 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=db76372587cb751031a07558dabb354e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=db76372587cb751031a07558dabb354e"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a2d62a258743751031a07558dabb35d8"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=a2d62a258743751031a07558dabb35d8^sys_idNOT IN5776372587cb751031a07558dabb352c,5f76372587cb751031a07558dabb3538,9f76372587cb751031a07558dabb3543"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
@@ -754,7 +755,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <generation_source/>
@@ -769,10 +770,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>5776372587cb751031a07558dabb352c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:14</sys_updated_on>
         <ui_id>d88e44ec-df9c-4051-bf6a-b3dd448d83b0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -803,7 +804,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <generation_source/>
@@ -818,10 +819,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>5f76372587cb751031a07558dabb3538</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <ui_id>ea3f763d-e431-40cb-a737-4da531657d70</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -852,7 +853,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</flow>
+        <flow display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <generation_source/>
@@ -867,10 +868,10 @@
         <sys_created_by>kate.flood</sys_created_by>
         <sys_created_on>2023-12-11 21:12:42</sys_created_on>
         <sys_id>9f76372587cb751031a07558dabb3543</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Award Program Management">33a031e147baf1505d6c8fd4f16d438d</sys_scope>
-        <sys_updated_by>kate.flood</sys_updated_by>
-        <sys_updated_on>2023-12-11 21:12:42</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2024-11-22 17:12:15</sys_updated_on>
         <ui_id>b1556a38-0381-4c13-91a5-5bf03caad1b2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -892,6 +893,7 @@
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9f76372587cb751031a07558dabb3543"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9f76372587cb751031a07558dabb3543"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a2d62a258743751031a07558dabb35d8"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=a2d62a258743751031a07558dabb35d8"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=a2d62a258743751031a07558dabb35d8^sys_idNOT IN09caa22d8743751031a07558dabb3539"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
@@ -934,7 +936,7 @@
         <label>award number</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Setup Demo">a2d62a258743751031a07558dabb35d8</model>
+        <model display_value="Cleanup Demo">a2d62a258743751031a07558dabb35d8</model>
         <model_id>a2d62a258743751031a07558dabb35d8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_a2d62a258743751031a07558dabb35d8</name>
